@@ -1,0 +1,11 @@
+In:
+sudo vim /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+Add:
+Environment="GTK_IM_MODULE=fcitx"
+Environment="QT_IM_MODULE=fcitx"
+Environment="XMODIFIERS=@im=fcitx"
+
+In:
+sudo vim ~/.sommelierrc
+Add:
+/usr/bin/fcitx-autostart
